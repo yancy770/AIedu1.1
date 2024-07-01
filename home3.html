@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /* 导航栏样式 */
+        .navbar {
+            overflow: hidden;
+            background-color: #333; /* 导航栏背景色 */
+            position: fixed; /* 固定在顶部 */
+            top: 0; /* 顶部位置 */
+            width: 100%; /* 宽度 */
+            z-index: 10; /* 确保导航栏在iframe之上 */
+        }
+
+        /* 导航栏链接样式 */
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2; /* 文字颜色 */
+            text-align: center;
+            padding: 14px 16px; /* 内边距 */
+            text-decoration: none; /* 去除下划线 */
+            font-size: 22px; /* 字体大小 */
+        }
+
+       
+
+        /* 确保iframe不会覆盖导航栏 */
+        .iframe-container {
+            margin-top: 50px; /* 为导航栏的高度留出空间 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="navbar">
+        <a href="home.html"><b>返回</a></b>
+        <!-- 可以添加更多导航链接 -->
+    </div>
+
+    <!-- 内容区域，包含返回按钮和iframe -->
+    <div class="iframe-container">
+        
+        <iframe src="https://www.deeplearning.ai/courses/machine-learning-specialization/" style="width:100%; height:100vw;"></iframe>
+    </div>
+</body>
+</html>
